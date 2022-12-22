@@ -1,0 +1,37 @@
+.menu-navbar-container{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(175,151,113);
+    height: 90px;
+}
+
+.menu-title{
+    margin-left: 10px;
+    color: black;
+    font-size: 35px;
+}
+
+.menu-items{
+    justify-content: flex-end;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-list{
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    /* margin-top:20px; */
+}
+
+.li-navbar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
