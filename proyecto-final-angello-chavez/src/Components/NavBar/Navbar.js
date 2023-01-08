@@ -9,7 +9,7 @@ return(
 <>
 
 <div className="menu-navbar-container">
-    <h1 className="menu-title"> Ajo Caramelo</h1>
+    <h1 className="menu-title">Home</h1>
     <nav className="menu-items">
     <li className="li-navbar">
         <a href="" className="menu-list">Beneficios</a>
