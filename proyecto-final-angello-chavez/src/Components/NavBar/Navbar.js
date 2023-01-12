@@ -1,37 +1,34 @@
 import React from "react";
 import CarWidget from "../CarWidget/CarWidget";
-import '../NavBar/NavBar.css'
+import '../NavBar/NavBar.css';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
-return(
-
-<>
-
-<div className="menu-navbar-container">
-    <h1 className="menu-title">Home</h1>
-    <nav className="menu-items">
-    <li className="li-navbar">
-        <a href="" className="menu-list">Beneficios</a>
-
-    </li>
-    <li className="li-navbar"> 
-        <a href="" className="menu-list">Historia</a>
-
-    </li>
-    <li className="li-navbar">
-        <a href="" className="menu-list">Lo Quiero!</a>
-
-    </li>
-    <CarWidget/>
-    </nav>
-   
-</div>
-
-
-</>
-
-)
+    return (
+        <>
+        <ul className="nav-list">
+            <li className="nav-item">
+                <Link to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/category/electronics">Electrónica</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/category/jewelery">Joyería</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/category/men's clothing">Ropa de Hombre</Link>
+            </li>
+            <li className="nav-item">
+                <Link to="/category/women's clothing">Ropa de Mujer</Link>
+            </li>
+            <div className="widget-container">
+                <CarWidget/>
+            </div>
+        </ul>
+        </>
+    );
 
 }
 
